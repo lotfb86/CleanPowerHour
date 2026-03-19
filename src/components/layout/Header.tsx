@@ -21,6 +21,7 @@ const navItems = [
   { label: "Podcast", href: "/podcast" },
   { label: "Training", href: "/training" },
   { label: "Blog", href: "/blog" },
+  { label: "Tools", href: "/tools" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
