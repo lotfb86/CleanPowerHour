@@ -72,8 +72,16 @@ export default function PodcastPage() {
       />
 
       {/* Hero — Latest Episode */}
-      <section className="bg-[var(--bg-dark)] py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="relative bg-[var(--bg-dark)] py-20 lg:py-28 overflow-hidden">
+        <Image
+          src="/images/unsplash/power-grid-sunset.jpg"
+          alt=""
+          fill
+          className="object-cover opacity-15"
+          sizes="100vw"
+          priority
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left — Info */}
             <div>

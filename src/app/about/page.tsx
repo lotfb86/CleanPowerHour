@@ -28,8 +28,16 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--bg-dark)] py-24 lg:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+      <section className="relative bg-[var(--bg-dark)] py-24 lg:py-32 overflow-hidden">
+        <Image
+          src="/images/unsplash/wind-turbines-sunset.jpg"
+          alt=""
+          fill
+          className="object-cover opacity-15"
+          sizes="100vw"
+          priority
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <p className="font-[family-name:var(--font-outfit)] text-sm font-semibold text-[var(--color-solar)] uppercase tracking-widest mb-4">
             Our Team
           </p>
@@ -43,6 +51,7 @@ export default function AboutPage() {
       </section>
 
       {/* Tim Montague Bio */}
+
       <section className="bg-[var(--bg-white)] py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">

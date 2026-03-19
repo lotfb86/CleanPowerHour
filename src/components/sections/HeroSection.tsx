@@ -4,6 +4,16 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-[var(--bg-dark)] min-h-[90vh] flex items-center">
+      {/* Background image */}
+      <Image
+        src="/images/unsplash/solar-farm-aerial.jpg"
+        alt=""
+        fill
+        className="object-cover opacity-10"
+        sizes="100vw"
+        priority
+      />
+
       {/* Dot grid pattern overlay */}
       <div
         className="absolute inset-0 opacity-[0.07]"

@@ -9,6 +9,7 @@ const footerLinks = {
     { label: "CLEAN Power Method", href: "/services/clean-power-method" },
     { label: "Cleantech Mastermind", href: "/services/mastermind" },
     { label: "AI Consulting", href: "/services/ai-consulting" },
+    { label: "C&I Strategy", href: "/services/ci-strategy" },
   ],
   podcast: [
     { label: "All Episodes", href: "/podcast" },
