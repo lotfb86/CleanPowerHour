@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clean Power Consulting Group Blog</title>
+    <link>https://cleanpower.group/blog</link>
+    <description>Insights on solar energy, clean technology, and building a career in the energy transition from Tim Montague.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2026 23:08:05 GMT</lastBuildDate>
+    <atom:link href="https://cleanpower.group/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wired for Intelligence: How AI is Revolutionizing the Clean Energy Industry</title>
+      <link>https://cleanpower.group/blog/ai-revolutionizing-clean-energy</link>
+      <guid isPermaLink="true">https://cleanpower.group/blog/ai-revolutionizing-clean-energy</guid>
+      <description>Explore how artificial intelligence is transforming the clean energy sector — from solar site assessment to grid optimization to predictive maintenance.</description>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 GMT</pubDate>
+      <author>tim@cleanpowerhour.com (Tim Montague)</author>
+    </item>
+    <item>
+      <title>Why I Believe in a Smarter, Safer Clean Energy Future: Solar, Storage &amp; AI</title>
+      <link>https://cleanpower.group/blog/smarter-safer-clean-energy-future</link>
+      <guid isPermaLink="true">https://cleanpower.group/blog/smarter-safer-clean-energy-future</guid>
+      <description>Tim Montague shares his vision for a clean energy future powered by solar, battery storage, and artificial intelligence — and why the convergence of these technologies changes everything.</description>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate>
+      <author>tim@cleanpowerhour.com (Tim Montague)</author>
+    </item>
+    <item>
+      <title>From Resi to Commercial Solar: A Solar Industry Perspective</title>
+      <link>https://cleanpower.group/blog/from-resi-to-commercial-solar</link>
+      <guid isPermaLink="true">https://cleanpower.group/blog/from-resi-to-commercial-solar</guid>
+      <description>Tim Montague shares his journey in the solar industry and insights on transitioning from residential to commercial solar on the Solar Surge Podcast.</description>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate>
+      <author>tim@cleanpowerhour.com (Tim Montague)</author>
+    </item>
+    <item>
+      <title>Montague Discusses Clean Energy Transition on Earth911 Podcast</title>
+      <link>https://cleanpower.group/blog/clean-energy-transition-earth911</link>
+      <guid isPermaLink="true">https://cleanpower.group/blog/clean-energy-transition-earth911</guid>
+      <description>Tim Montague joins Earth911 to discuss the Inflation Reduction Act, bipartisan infrastructure, and the progress — and challenges — of the clean energy transition.</description>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 GMT</pubDate>
+      <author>tim@cleanpowerhour.com (Tim Montague)</author>
+    </item>
+    <item>
+      <title>Tips for Connecting with Leads in the C&amp;I Solar Sales Process</title>
+      <link>https://cleanpower.group/blog/connecting-with-leads-ci-solar</link>
+      <guid isPermaLink="true">https://cleanpower.group/blog/connecting-with-leads-ci-solar</guid>
+      <description>Learn proven strategies for connecting with warm leads in the commercial and industrial solar sales process — one of the most challenging parts of C&amp;I solar development.</description>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate>
+      <author>tim@cleanpowerhour.com (Tim Montague)</author>
+    </item>
+  </channel>
+</rss>

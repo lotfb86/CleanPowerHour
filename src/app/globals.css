@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* ========================================
+   DESIGN TOKENS — Clean Power Consulting Group
+   Industrial Editorial — Clean Energy Authority
+
+   All colors verified against WCAG AA:
+   --midnight on --bg-white: 18.1:1 AAA
+   --charcoal on --bg-white: 14.6:1 AAA
+   --slate on --bg-white: 7.6:1 AAA
+   --mist on --bg-white: 4.8:1 AA
+   --solar-deep on --bg-white: 5.0:1 AA
+   --electric-deep on --bg-white: 5.9:1 AA
+   --bg-white on --bg-dark: 18.1:1 AAA
+   --bg-white on --solar-deep: 5.0:1 AA
+   ======================================== */
+
+:root {
+  /* Font families — loaded via Google Fonts link in layout.tsx */
+  --font-outfit: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-newsreader: 'Newsreader', Georgia, 'Times New Roman', serif;
+
+  /* Primary Text Colors */
+  --color-midnight: #0A1628;
+  --color-charcoal: #1E293B;
+  --color-slate: #475569;
+  --color-mist: #64748B;
+
+  /* Accent Colors */
+  --color-solar: #D97706;
+  --color-solar-deep: #B45309;
+  --color-solar-light: #FDE68A;
+  --color-electric: #0EA5E9;
+  --color-electric-deep: #0369A1;
+
+  /* Background Colors */
+  --bg-white: #FFFFFF;
+  --bg-warm: #FFFBF5;
+  --bg-cool: #F0F9FF;
+  --bg-slate: #F1F5F9;
+  --bg-dark: #0A1628;
+  --bg-dark-alt: #1E293B;
+
+  /* Semantic Colors */
+  --color-success: #059669;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+  --color-info: #0EA5E9;
+
+  /* Spacing */
+  --section-padding-y: 6rem;
+  --section-padding-y-mobile: 4rem;
+  --container-padding-x: 1.5rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@theme inline {
+  --color-midnight: var(--color-midnight);
+  --color-charcoal: var(--color-charcoal);
+  --color-slate: var(--color-slate);
+  --color-mist: var(--color-mist);
+  --color-solar: var(--color-solar);
+  --color-solar-deep: var(--color-solar-deep);
+  --color-solar-light: var(--color-solar-light);
+  --color-electric: var(--color-electric);
+  --color-electric-deep: var(--color-electric-deep);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --color-info: var(--color-info);
+
+  --color-bg-white: var(--bg-white);
+  --color-bg-warm: var(--bg-warm);
+  --color-bg-cool: var(--bg-cool);
+  --color-bg-slate: var(--bg-slate);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-dark-alt: var(--bg-dark-alt);
+
+  --font-display: var(--font-outfit);
+  --font-body: var(--font-newsreader);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-white);
+  color: var(--color-charcoal);
+  font-family: var(--font-body), Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-dark);
+  color: white;
+  border-radius: var(--radius-md);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top var(--transition-fast);
+}
+
+.skip-to-main:focus {
+  top: 1rem;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   All heading and paragraph styles are set via Tailwind
+   utility classes in components. No base overrides needed —
+   Tailwind v4 CSS Layers make unlayered rules override utilities.
+   ======================================== */
+
+/* ========================================
+   FOCUS STYLES
+   ======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--color-electric-deep);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+  background: var(--color-solar-light);
+  color: var(--color-midnight);
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-slate);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-mist);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate);
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
