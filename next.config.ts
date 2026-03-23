@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
+const isStaticExport = process.env.NEXT_STATIC_EXPORT === "1";
+
 const nextConfig: NextConfig = {
+  ...(isStaticExport && { output: "export" }),
   images: {
+    unoptimized: isStaticExport,
     remotePatterns: [
       {
         protocol: "https",
@@ -17,7 +21,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
+  ...(isStaticExport ? {} : { async redirects() {
     return [
       // cleanpowerhour.com → cleanpower.group redirects
       // These will be configured at the DNS/Vercel level for the actual domain
@@ -98,7 +102,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
-  },
+  } }),
 };
 
 export default nextConfig;

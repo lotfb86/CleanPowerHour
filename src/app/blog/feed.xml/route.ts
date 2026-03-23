@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import { getAllPosts } from "@/lib/blog";
 
 const BASE_URL = "https://cleanpower.group";

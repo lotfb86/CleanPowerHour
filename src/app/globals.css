@@ -16,6 +16,10 @@
    ======================================== */
 
 :root {
+  /* Font families — loaded via Google Fonts link in layout.tsx */
+  --font-outfit: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-newsreader: 'Newsreader', Georgia, 'Times New Roman', serif;
+
   /* Primary Text Colors */
   --color-midnight: #0A1628;
   --color-charcoal: #1E293B;
